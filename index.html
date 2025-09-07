@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>atharva dixit | Portfolio</title>
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    rel="stylesheet"
+  >
+  <style>
+    /* Body & General */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      color: white;
+      text-align: center;
+      overflow-x: hidden;
+      background: radial-gradient(circle at bottom, #000010, #000000);
+    }
+
+    /* STAR BACKGROUND */
+    .stars {
+      position: fixed;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      background: transparent;
+      overflow: hidden;
+      z-index: -1;
+    }
+
+    .star {
+      position: absolute;
+      width: 2px;
+      height: 2px;
+      background: white;
+      border-radius: 50%;
+      opacity: 0.8;
+      animation: twinkle 2s infinite alternate, drift linear infinite;
+    }
+
+    @keyframes twinkle {
+      from { opacity: 0.2; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1.3); }
+    }
+
+    @keyframes drift {
+      from { transform: translateY(0); }
+      to { transform: translateY(200vh); }
+    }
+
+    /* HERO / PROFILE */
+    .hero {
+      padding: 70px 20px;
+    }
+
+    .hero img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 4px solid #00aaff;
+      box-shadow: 0 0 40px #00aaff, 0 0 80px #0088cc;
+      animation: pulseGlow 3s infinite alternate;
+    }
+
+    @keyframes pulseGlow {
+      from { box-shadow: 0 0 20px #00aaff, 0 0 40px #0088cc; }
+      to { box-shadow: 0 0 50px #00ccff, 0 0 100px #00aaff; }
+    }
+
+    .hero h1 {
+      margin-top: 25px;
+      font-size: 3.2em;
+      color: #00ccff;
+      text-shadow: 0 0 15px #00ccff, 0 0 30px #0077b6;
+    }
+
+    .hero p {
+      font-size: 1.5em;
+      margin-top: 15px;
+      color: #fff;
+      text-shadow: 0 0 10px #00ccff, 0 0 20px #0099cc;
+      animation: glowText 2s ease-in-out infinite alternate;
+    }
+
+    @keyframes glowText {
+      from { text-shadow: 0 0 15px #00ccff, 0 0 30px #0099ff; }
+      to { text-shadow: 0 0 30px #00e6ff, 0 0 60px #00aaff; }
+    }
+
+    /* SECTIONS */
+    section {
+      padding: 50px 25px;
+      max-width: 900px;
+      margin: auto;
+      text-align: left;
+    }
+
+    section h2 {
+      font-size: 2.2em;
+      color: #00ccff;
+      border-bottom: 2px solid #00ccff;
+      display: inline-block;
+      margin-bottom: 20px;
+      text-shadow: 0 0 10px #00ccff;
+    }
+
+    section p {
+      font-size: 1.25em;
+      line-height: 1.8;
+      color: #ddd;
+    }
+
+    /* SOCIAL LINKS */
+    .socials {
+      margin-top: 25px;
+      font-size: 1.4em;
+    }
+
+    .socials a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #00ccff;
+      transition: all 0.3s ease;
+    }
+
+    .socials a i {
+      margin-right: 6px;
+    }
+
+    .socials a:hover {
+      color: #ffffff;
+      text-shadow: 0 0 15px #00ccff;
+      transform: scale(1.1);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Star Background -->
+  <div class="stars"></div>
+
+  <!-- Profile / Hero Section -->
+  <section class="hero">
+    <img
+      src="https://i.pinimg.com/736x/87/67/20/876720e867c3cf66e6ba5f2ebcd84191.jpg"
+      alt="Profile Picture"
+    >
+    <h1>atharva dixit</h1>
+    <p>⚡ Electronics Innovator • Futuristic Explorer • Young Entrepreneur 🚀</p>
+    <div class="socials">
+      <a href="https://github.com/atharvadixit987-crypto" target="_blank">
+        <i class="fab fa-github"></i> GitHub
+      </a>
+      <a href="https://linkedin.com/in/atharva-dixit" target="_blank">
+        <i class="fab fa-linkedin"></i> LinkedIn
+      </a>
+      <a href="https://instagram.com/_atharvadixit_" target="_blank">
+        <i class="fab fa-instagram"></i> Instagram
+      </a>
+      <a href="mailto:athdixit10@gmail.com">
+        <i class="fas fa-envelope"></i> Gmail
+      </a>
+    </div>
+  </section>
+
+  <!-- About Me Section -->
+  <section>
+    <h2>About Me</h2>
+    <p>
+      I’m an Electronics & Computer Science student with a passion for turning ideas into reality—whether it’s building circuits, coding smart systems, or modernizing businesses. I actively run and modernize my family’s <b>lead-acid battery & distilled water factory</b>, bringing in automation and creating a strong online presence through websites. Exploring, innovating, and scaling ideas is not just my career goal—it’s my lifestyle. 🌌
+    </p>
+  </section>
+
+  <!-- Interests Section -->
+  <section>
+    <h2>Interests</h2>
+    <p>
+      Designing Arduino circuits, coding in C, C++, Python, and creating custom electronic projects. I enjoy working with microcontrollers, embedded systems, and circuit simulation tools. My curiosity often takes me into unexplored tech—where I blend hardware with software for creative solutions.
+    </p>
+    <p style="color:#aaa; font-style:italic; margin-top:10px;">
+      ⚡ Fun fact: I’ve blown more fuses experimenting with electronics than I’ve burned calories at the gym 😅
+    </p>
+  </section>
+
+  <script>
+    // Generate stars dynamically
+    const starsContainer = document.querySelector('.stars');
+    for (let i = 0; i < 120; i++) {
+      const star = document.createElement('div');
+      star.className = 'star';
+      const size = Math.random() * 3 + 1;
+      star.style.width = size + 'px';
+      star.style.height = size + 'px';
+      star.style.left = Math.random() * 100 + 'vw';
+      star.style.top = Math.random() * 100 + 'vh';
+      star.style.animationDuration = (Math.random() * 10 + 5) + 's';
+      starsContainer.appendChild(star);
+    }
+  </script>
+
+</body>
+</html>
